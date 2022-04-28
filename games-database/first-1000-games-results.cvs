@@ -1,0 +1,1 @@
+i didn't have sql but i watched the videos
