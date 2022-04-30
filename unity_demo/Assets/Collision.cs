@@ -14,7 +14,18 @@ public class Collision : MonoBehaviour
 // update is called once per frame
 void Update()
 {
+  
+}
 
+void OnCollisionEnter(Collision c)
+{
+    if (Equals(c.gameObject.tag, "wall"))
+    {
+        Debug.Log("We hit a wall...what should we do?");
+
+        // Player takes damage.
+        // Restart the level.
+    }
 }
 
 void OnCollisionEnter(Collision c)
