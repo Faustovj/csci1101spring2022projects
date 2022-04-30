@@ -15,4 +15,14 @@ public class PlayerCollision : MonoBehaviour
     {
         
     }
+    void OnCollisionEnter(Collision c)
+{
+    if (Equals(c.gameObject.tag, "wall"))
+    {
+        Debug.Log("We hit a wall...what should we do?");
+
+        // Player takes damage.
+        // Restart the level.
+    }
+}
 }
